@@ -7,109 +7,133 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     color: #333;
+    background-color: #f4f4f4;
+    line-height: 1.6;
 }
 
-/* Navigation Bar */
+/* Navigation */
 header {
     background-color: #333;
-    color: white;
-    padding: 10px;
+    padding: 15px 0;
 }
 
-nav ul {
+header nav ul {
     list-style-type: none;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
-nav ul li {
-    display: inline;
+header nav ul li {
     margin: 0 20px;
 }
 
-nav ul li a {
+header nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
 
-/* Hero Section */
-.hero {
-    background-color: #333;
+/* Home Section */
+#home {
+    background: #2c3e50;
     color: white;
     text-align: center;
     padding: 50px;
 }
 
-.hero-image {
-    width: 100%;
-    height: auto;
-    max-height: 400px;
+#home h1 {
+    font-size: 3em;
 }
 
-button {
-    padding: 10px 20px;
-    background-color: #007BFF;
+#home .btn {
+    background-color: #e74c3c;
     color: white;
-    border: none;
-    cursor: pointer;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
 }
 
-button:hover {
-    background-color: #0056b3;
+#home .btn:hover {
+    background-color: #c0392b;
 }
 
 /* About Section */
 #about {
-    padding: 50px;
+    padding: 40px;
     background-color: white;
     text-align: center;
 }
 
-/* Gallery Section */
-#gallery {
-    padding: 50px;
-    background-color: #f0f0f0;
+#about h2 {
+    margin-bottom: 20px;
 }
 
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
+/* Services Section */
+#services {
+    padding: 40px;
+    text-align: center;
+    background-color: #ecf0f1;
 }
 
-.gallery-grid img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+#services .service {
+    margin: 20px 0;
+}
+
+#services .service h3 {
+    margin-bottom: 10px;
+}
+
+/* Portfolio Section */
+#portfolio {
+    padding: 40px;
+    text-align: center;
+}
+
+.portfolio-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.portfolio-gallery img {
+    width: 30%;
+    border-radius: 10px;
 }
 
 /* Contact Section */
 #contact {
-    padding: 50px;
+    padding: 40px;
     background-color: white;
     text-align: center;
 }
 
-form input, form textarea {
-    width: 80%;
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact input, #contact textarea {
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-form button {
+#contact button {
     padding: 10px 20px;
-    background-color: #28a745;
+    background-color: #e74c3c;
     color: white;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-form button:hover {
-    background-color: #218838;
+#contact button:hover {
+    background-color: #c0392b;
 }
 
 /* Footer */
